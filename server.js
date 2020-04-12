@@ -9,16 +9,6 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-
-const http = require('https');
-http.createServer((req, res) => {
-  res.setHeader('Content-Type', 'text/html');
-});
-
-server.listen(PORT,() => {
-  console.log(`Server running at port `+PORT);
-});
 /* 
 ^^ creates a path to static front-end files: html, css & js.
 notice how files are referenced in index.html: 
