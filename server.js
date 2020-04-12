@@ -11,13 +11,13 @@ app.use(express.json());
 
 
 
-const http = require('http');
+const http = require('https');
 http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html');
 });
 
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
+server.listen(PORT,() => {
+  console.log(`Server running at port `+PORT);
 });
 /* 
 ^^ creates a path to static front-end files: html, css & js.
