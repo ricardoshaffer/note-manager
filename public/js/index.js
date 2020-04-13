@@ -3,6 +3,7 @@ var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
 var $noteList = $(".list-container .list-group");
+// let $emailEntered = $("#email"); /// added for personal test
 
 // activeNote is used to keep track of the note in the textarea
 var activeNote = {};
@@ -141,3 +142,48 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+
+
+
+
+// // ============= TESTING PERSONAL CODE =============
+// //
+// //TESTING CODE TO APPEND API TO SECURE ALL NOTES
+// //==================================================
+// testingCode = scheduleHour+(moment().format("MMM"+"Do"));
+// localStorage.setItem(testingCode, todoItem);
+// console.log("APPENDING IDENTIFYING CODE OF: " + testingCode);
+
+// <form action="/action_page.php">
+//   <label for="email">Email:</label>
+//   <input type="email" id="email" name="email"
+//   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+//   <input type="submit">
+// </form>
+
+// if (emailLength < 8 || reqPasswordLength > 128  || reqPasswordLength === NaN){
+//   redBox.children[0].style.display = "inline-block";
+//   document.getElementById("warningMsg").innerHTML = "you must select 8-128 characters";
+// } else {
+//   lengthTest = true;
+// }
+
+//    // a loop since time is in 24-hour block & pulls what is stored.
+//    for(i=0; i <24; i++){
+//     // pulls the input ID, which is now appended with today's date. If it is not today's event; it won't pull it.
+//         $("#input-"+[i]).val(localStorage.getItem([i]+(moment().format("MMM"+"Do")))); 
+//     // highlights the current hour of today so you know where you're at on your schedule (w/ or without data)
+//         $("#"+currentHour).addClass("currently");
+//         console.log("current Hour: " + currentHour + ", date: " + (moment().format('MMM'+"Do")));
+//     }
+//     if (email != blank){
+//     else{
+//     }
+    
+//     || reqPasswordLength > 128  || reqPasswordLength === NaN){
+//       redBox.children[0].style.display = "inline-block";
+//       document.getElementById("warningMsg").innerHTML = "you must select 8-128 characters";
+//   } else {
+//       lengthTest = true;
+//   }
+
