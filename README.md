@@ -1,5 +1,6 @@
 # note-manager
 This program enables the user to create notes, save, and delete notes utilizing JSON to store the information.
+available to preview at: https://secure-waters-39573.herokuapp.com/
 
 ## Architecture
 -   index.html file contains the front-end user interface.
